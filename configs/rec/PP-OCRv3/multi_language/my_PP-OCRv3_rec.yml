@@ -77,10 +77,10 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./train_data/
+    data_dir: /kaggle/input/myanmar-ocr-dataset/dataset/train
     ext_op_transform_idx: 1
     label_file_list:
-    - ./train_data/train_list.txt
+    - /kaggle/input/myanmar-ocr-dataset/dataset/train.txt
     transforms:
     - DecodeImage:
         img_mode: BGR
@@ -108,9 +108,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./train_data
+    data_dir: /kaggle/input/myanmar-ocr-dataset/dataset/test
     label_file_list:
-    - ./train_data/val_list.txt
+    - /kaggle/input/myanmar-ocr-dataset/dataset/test.txt
     transforms:
     - DecodeImage:
         img_mode: BGR
